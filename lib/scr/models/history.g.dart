@@ -11,7 +11,8 @@ _$History$ _$$History$FromJson(Map<String, dynamic> json) => _$History$(
       value: (json['value'] as num?)?.toDouble() ?? 0.0,
     );
 
-Map<String, dynamic> _$$History$ToJson(_$History$ instance) => <String, dynamic>{
+Map<String, dynamic> _$$History$ToJson(_$History$ instance) =>
+    <String, dynamic>{
       'time': instance.time,
       'value': instance.value,
     };

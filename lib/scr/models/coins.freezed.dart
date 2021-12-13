@@ -26,25 +26,25 @@ class _$CoinsTearOff {
       String symbol = ' ',
       String name = ' ',
       String image = ' ',
-      double current_price = 0.0,
-      double market_cap = 0.0,
-      double market_cap_rank = 0.0,
-      double fully_diluted_valuation = 0.0,
-      double total_volume = 0.0,
-      double high_24h = 0.0,
-      double low_24h = 0.0,
-      double price_change_24h = 0.0,
-      double price_change_percentage_24h = 0.0,
-      double market_cap_change_24h = 0.0,
-      double market_cap_change_percentage_24h = 0.0,
-      double circulating_supply = 0.0,
-      double total_supply = 0.0,
-      double max_supply = 0.0,
-      double ath = 0.0,
-      double ath_change_percentage = 0.0,
+      double current_price = 0.00,
+      double market_cap = 0.00,
+      double market_cap_rank = 0.00,
+      double fully_diluted_valuation = 0.00,
+      double total_volume = 0.00,
+      double high_24h = 0.00,
+      double low_24h = 0.00,
+      double price_change_24h = 0.00,
+      double price_change_percentage_24h = 0.00,
+      double market_cap_change_24h = 0.00,
+      double market_cap_change_percentage_24h = 0.00,
+      double circulating_supply = 0.00,
+      double total_supply = 0.00,
+      double max_supply = 0.00,
+      double ath = 0.00,
+      double ath_change_percentage = 0.00,
       String ath_date = ' ',
-      double atl = 0.0,
-      double atl_change_percentage = 0.0,
+      double atl = 0.00,
+      double atl_change_percentage = 0.00,
       String atl_date = ' ',
       Object? roi,
       String last_updated = ' '}) {
@@ -102,7 +102,8 @@ mixin _$Coins {
   double get price_change_24h => throw _privateConstructorUsedError;
   double get price_change_percentage_24h => throw _privateConstructorUsedError;
   double get market_cap_change_24h => throw _privateConstructorUsedError;
-  double get market_cap_change_percentage_24h => throw _privateConstructorUsedError;
+  double get market_cap_change_percentage_24h =>
+      throw _privateConstructorUsedError;
   double get circulating_supply => throw _privateConstructorUsedError;
   double get total_supply => throw _privateConstructorUsedError;
   double get max_supply => throw _privateConstructorUsedError;
@@ -122,7 +123,8 @@ mixin _$Coins {
 
 /// @nodoc
 abstract class $CoinsCopyWith<$Res> {
-  factory $CoinsCopyWith(Coins value, $Res Function(Coins) then) = _$CoinsCopyWithImpl<$Res>;
+  factory $CoinsCopyWith(Coins value, $Res Function(Coins) then) =
+      _$CoinsCopyWithImpl<$Res>;
   $Res call(
       {String id,
       String symbol,
@@ -246,7 +248,8 @@ class _$CoinsCopyWithImpl<$Res> implements $CoinsCopyWith<$Res> {
           ? _value.market_cap_change_24h
           : market_cap_change_24h // ignore: cast_nullable_to_non_nullable
               as double,
-      market_cap_change_percentage_24h: market_cap_change_percentage_24h == freezed
+      market_cap_change_percentage_24h: market_cap_change_percentage_24h ==
+              freezed
           ? _value.market_cap_change_percentage_24h
           : market_cap_change_percentage_24h // ignore: cast_nullable_to_non_nullable
               as double,
@@ -297,7 +300,8 @@ class _$CoinsCopyWithImpl<$Res> implements $CoinsCopyWith<$Res> {
 
 /// @nodoc
 abstract class $Coins$CopyWith<$Res> implements $CoinsCopyWith<$Res> {
-  factory $Coins$CopyWith(Coins$ value, $Res Function(Coins$) then) = _$Coins$CopyWithImpl<$Res>;
+  factory $Coins$CopyWith(Coins$ value, $Res Function(Coins$) then) =
+      _$Coins$CopyWithImpl<$Res>;
   @override
   $Res call(
       {String id,
@@ -329,8 +333,10 @@ abstract class $Coins$CopyWith<$Res> implements $CoinsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$Coins$CopyWithImpl<$Res> extends _$CoinsCopyWithImpl<$Res> implements $Coins$CopyWith<$Res> {
-  _$Coins$CopyWithImpl(Coins$ _value, $Res Function(Coins$) _then) : super(_value, (v) => _then(v as Coins$));
+class _$Coins$CopyWithImpl<$Res> extends _$CoinsCopyWithImpl<$Res>
+    implements $Coins$CopyWith<$Res> {
+  _$Coins$CopyWithImpl(Coins$ _value, $Res Function(Coins$) _then)
+      : super(_value, (v) => _then(v as Coins$));
 
   @override
   Coins$ get _value => super._value as Coins$;
@@ -421,7 +427,8 @@ class _$Coins$CopyWithImpl<$Res> extends _$CoinsCopyWithImpl<$Res> implements $C
           ? _value.market_cap_change_24h
           : market_cap_change_24h // ignore: cast_nullable_to_non_nullable
               as double,
-      market_cap_change_percentage_24h: market_cap_change_percentage_24h == freezed
+      market_cap_change_percentage_24h: market_cap_change_percentage_24h ==
+              freezed
           ? _value.market_cap_change_percentage_24h
           : market_cap_change_percentage_24h // ignore: cast_nullable_to_non_nullable
               as double,
@@ -478,30 +485,31 @@ class _$Coins$ implements Coins$ {
       this.symbol = ' ',
       this.name = ' ',
       this.image = ' ',
-      this.current_price = 0.0,
-      this.market_cap = 0.0,
-      this.market_cap_rank = 0.0,
-      this.fully_diluted_valuation = 0.0,
-      this.total_volume = 0.0,
-      this.high_24h = 0.0,
-      this.low_24h = 0.0,
-      this.price_change_24h = 0.0,
-      this.price_change_percentage_24h = 0.0,
-      this.market_cap_change_24h = 0.0,
-      this.market_cap_change_percentage_24h = 0.0,
-      this.circulating_supply = 0.0,
-      this.total_supply = 0.0,
-      this.max_supply = 0.0,
-      this.ath = 0.0,
-      this.ath_change_percentage = 0.0,
+      this.current_price = 0.00,
+      this.market_cap = 0.00,
+      this.market_cap_rank = 0.00,
+      this.fully_diluted_valuation = 0.00,
+      this.total_volume = 0.00,
+      this.high_24h = 0.00,
+      this.low_24h = 0.00,
+      this.price_change_24h = 0.00,
+      this.price_change_percentage_24h = 0.00,
+      this.market_cap_change_24h = 0.00,
+      this.market_cap_change_percentage_24h = 0.00,
+      this.circulating_supply = 0.00,
+      this.total_supply = 0.00,
+      this.max_supply = 0.00,
+      this.ath = 0.00,
+      this.ath_change_percentage = 0.00,
       this.ath_date = ' ',
-      this.atl = 0.0,
-      this.atl_change_percentage = 0.0,
+      this.atl = 0.00,
+      this.atl_change_percentage = 0.00,
       this.atl_date = ' ',
       this.roi,
       this.last_updated = ' '});
 
-  factory _$Coins$.fromJson(Map<String, dynamic> json) => _$$Coins$FromJson(json);
+  factory _$Coins$.fromJson(Map<String, dynamic> json) =>
+      _$$Coins$FromJson(json);
 
   @JsonKey(defaultValue: ' ')
   @override
@@ -515,61 +523,61 @@ class _$Coins$ implements Coins$ {
   @JsonKey(defaultValue: ' ')
   @override
   final String image;
-  @JsonKey(defaultValue: 0.0)
+  @JsonKey(defaultValue: 0.00)
   @override
   final double current_price;
-  @JsonKey(defaultValue: 0.0)
+  @JsonKey(defaultValue: 0.00)
   @override
   final double market_cap;
-  @JsonKey(defaultValue: 0.0)
+  @JsonKey(defaultValue: 0.00)
   @override
   final double market_cap_rank;
-  @JsonKey(defaultValue: 0.0)
+  @JsonKey(defaultValue: 0.00)
   @override
   final double fully_diluted_valuation;
-  @JsonKey(defaultValue: 0.0)
+  @JsonKey(defaultValue: 0.00)
   @override
   final double total_volume;
-  @JsonKey(defaultValue: 0.0)
+  @JsonKey(defaultValue: 0.00)
   @override
   final double high_24h;
-  @JsonKey(defaultValue: 0.0)
+  @JsonKey(defaultValue: 0.00)
   @override
   final double low_24h;
-  @JsonKey(defaultValue: 0.0)
+  @JsonKey(defaultValue: 0.00)
   @override
   final double price_change_24h;
-  @JsonKey(defaultValue: 0.0)
+  @JsonKey(defaultValue: 0.00)
   @override
   final double price_change_percentage_24h;
-  @JsonKey(defaultValue: 0.0)
+  @JsonKey(defaultValue: 0.00)
   @override
   final double market_cap_change_24h;
-  @JsonKey(defaultValue: 0.0)
+  @JsonKey(defaultValue: 0.00)
   @override
   final double market_cap_change_percentage_24h;
-  @JsonKey(defaultValue: 0.0)
+  @JsonKey(defaultValue: 0.00)
   @override
   final double circulating_supply;
-  @JsonKey(defaultValue: 0.0)
+  @JsonKey(defaultValue: 0.00)
   @override
   final double total_supply;
-  @JsonKey(defaultValue: 0.0)
+  @JsonKey(defaultValue: 0.00)
   @override
   final double max_supply;
-  @JsonKey(defaultValue: 0.0)
+  @JsonKey(defaultValue: 0.00)
   @override
   final double ath;
-  @JsonKey(defaultValue: 0.0)
+  @JsonKey(defaultValue: 0.00)
   @override
   final double ath_change_percentage;
   @JsonKey(defaultValue: ' ')
   @override
   final String ath_date;
-  @JsonKey(defaultValue: 0.0)
+  @JsonKey(defaultValue: 0.00)
   @override
   final double atl;
-  @JsonKey(defaultValue: 0.0)
+  @JsonKey(defaultValue: 0.00)
   @override
   final double atl_change_percentage;
   @JsonKey(defaultValue: ' ')
@@ -595,29 +603,45 @@ class _$Coins$ implements Coins$ {
             const DeepCollectionEquality().equals(other.symbol, symbol) &&
             const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.image, image) &&
-            const DeepCollectionEquality().equals(other.current_price, current_price) &&
-            const DeepCollectionEquality().equals(other.market_cap, market_cap) &&
-            const DeepCollectionEquality().equals(other.market_cap_rank, market_cap_rank) &&
-            const DeepCollectionEquality().equals(other.fully_diluted_valuation, fully_diluted_valuation) &&
-            const DeepCollectionEquality().equals(other.total_volume, total_volume) &&
+            const DeepCollectionEquality()
+                .equals(other.current_price, current_price) &&
+            const DeepCollectionEquality()
+                .equals(other.market_cap, market_cap) &&
+            const DeepCollectionEquality()
+                .equals(other.market_cap_rank, market_cap_rank) &&
+            const DeepCollectionEquality().equals(
+                other.fully_diluted_valuation, fully_diluted_valuation) &&
+            const DeepCollectionEquality()
+                .equals(other.total_volume, total_volume) &&
             const DeepCollectionEquality().equals(other.high_24h, high_24h) &&
             const DeepCollectionEquality().equals(other.low_24h, low_24h) &&
-            const DeepCollectionEquality().equals(other.price_change_24h, price_change_24h) &&
-            const DeepCollectionEquality().equals(other.price_change_percentage_24h, price_change_percentage_24h) &&
-            const DeepCollectionEquality().equals(other.market_cap_change_24h, market_cap_change_24h) &&
             const DeepCollectionEquality()
-                .equals(other.market_cap_change_percentage_24h, market_cap_change_percentage_24h) &&
-            const DeepCollectionEquality().equals(other.circulating_supply, circulating_supply) &&
-            const DeepCollectionEquality().equals(other.total_supply, total_supply) &&
-            const DeepCollectionEquality().equals(other.max_supply, max_supply) &&
+                .equals(other.price_change_24h, price_change_24h) &&
+            const DeepCollectionEquality().equals(
+                other.price_change_percentage_24h,
+                price_change_percentage_24h) &&
+            const DeepCollectionEquality()
+                .equals(other.market_cap_change_24h, market_cap_change_24h) &&
+            const DeepCollectionEquality().equals(
+                other.market_cap_change_percentage_24h,
+                market_cap_change_percentage_24h) &&
+            const DeepCollectionEquality()
+                .equals(other.circulating_supply, circulating_supply) &&
+            const DeepCollectionEquality()
+                .equals(other.total_supply, total_supply) &&
+            const DeepCollectionEquality()
+                .equals(other.max_supply, max_supply) &&
             const DeepCollectionEquality().equals(other.ath, ath) &&
-            const DeepCollectionEquality().equals(other.ath_change_percentage, ath_change_percentage) &&
+            const DeepCollectionEquality()
+                .equals(other.ath_change_percentage, ath_change_percentage) &&
             const DeepCollectionEquality().equals(other.ath_date, ath_date) &&
             const DeepCollectionEquality().equals(other.atl, atl) &&
-            const DeepCollectionEquality().equals(other.atl_change_percentage, atl_change_percentage) &&
+            const DeepCollectionEquality()
+                .equals(other.atl_change_percentage, atl_change_percentage) &&
             const DeepCollectionEquality().equals(other.atl_date, atl_date) &&
             const DeepCollectionEquality().equals(other.roi, roi) &&
-            const DeepCollectionEquality().equals(other.last_updated, last_updated));
+            const DeepCollectionEquality()
+                .equals(other.last_updated, last_updated));
   }
 
   @override
@@ -653,7 +677,8 @@ class _$Coins$ implements Coins$ {
 
   @JsonKey(ignore: true)
   @override
-  $Coins$CopyWith<Coins$> get copyWith => _$Coins$CopyWithImpl<Coins$>(this, _$identity);
+  $Coins$CopyWith<Coins$> get copyWith =>
+      _$Coins$CopyWithImpl<Coins$>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {

@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
                                 final Store<AppState> store = StoreProvider.of<AppState>(context);
                                 store.state.coins
                                     .map((e) => [
-                                          if (e.name == value) {store.dispatch(GetSelectedCoin(e))}
+                                          if (e.name == value) <void> {store.dispatch(GetSelectedCoin(e))}
                                         ])
                                     .toList();
                                 store.dispatch(Get1DayHistory(onResult));
@@ -240,7 +240,7 @@ class _HomePageState extends State<HomePage> {
                           child: Image.network("${data['wti']}"),
                         ),
                         Text(
-                          "${double.parse(data['thet']).round()} \u00B0",
+                          "${double.parse("${data['thet']}").round()} \u00B0",
                           textAlign: TextAlign.center,
                           style: const TextStyle(
                             color: Color(0xFFA0C9C5),

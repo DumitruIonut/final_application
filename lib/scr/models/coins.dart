@@ -1,7 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-
 part 'coins.freezed.dart';
-
 part 'coins.g.dart';
 
 @freezed
@@ -33,7 +31,7 @@ class Coins with _$Coins {
     @Default(' ') String atl_date,
     Object? roi,
     @Default(' ') String last_updated,
-  }) = Coins$;
+}) = Coins$;
 
   factory Coins.fromJson(Map<dynamic, dynamic> json) => _$CoinsFromJson(Map<String, dynamic>.from(json));
 }

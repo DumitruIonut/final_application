@@ -25,9 +25,22 @@ class AppEpics {
     ]);
   }
 
+  //
+  //   Stream<dynamic> getWeather(Stream<GetWeather> actions, EpicStore<AppState> store) {
+  //   return actions.flatMap<void>((GetWeather action) => Stream<void>.value(null)
+  //       .asyncMap((_) => _weatherApi.getWeather())
+  //       .map<Object>((Map<String, dynamic> info) => GetWeatherSuccessful(info))
+  //       .onErrorReturnWith((Object error, StackTrace stackTrace) => GetWeatherError(error))
+  //       .switchMap <void> ((_) => Stream.periodic(Duration(seconds: 1)))
+  //       .doOnData(action.result));
+  // }
+
+
+
+
   Stream<dynamic> getWeather(Stream<GetWeather> actions, EpicStore<AppState> store) {
-    return actions.flatMap((GetWeather action) => Stream<void>.value(null)
-        .switchMap((_) => Stream.periodic(const Duration(seconds: 10)))
+    return actions.flatMap<void>((GetWeather action) => Stream<void>.value(null)
+        .switchMap((_) => Stream<void>.periodic(const Duration(seconds: 1)))
         .asyncMap((_) => _weatherApi.getWeather())
         .map<Object>((Map<String, dynamic> info) => GetWeatherSuccessful(info))
         .onErrorReturnWith((Object error, StackTrace stackTrace) => GetWeatherError(error))
@@ -35,7 +48,7 @@ class AppEpics {
   }
 
   Stream<dynamic> getCoins(Stream<GetCoins> actions, EpicStore<AppState> store) {
-    return actions.flatMap((GetCoins action) => Stream<void>.value(null)
+    return actions.flatMap<void>((GetCoins action) => Stream<void>.value(null)
         .asyncMap((_) => _coinApi.getCoins())
         .map<Object>((List<Coins> coins) => GetCoinsSuccessful(coins))
         .onErrorReturnWith((Object error, StackTrace stackTrace) => GetCoinsError(error))
@@ -43,7 +56,7 @@ class AppEpics {
   }
 
   Stream<dynamic> get1DayHistory(Stream<Get1DayHistory> actions, EpicStore<AppState> store) {
-    return actions.flatMap((Get1DayHistory action) => Stream<void>.value(null)
+    return actions.flatMap<void>((Get1DayHistory action) => Stream<void>.value(null)
         .asyncMap((_) => _coinApi.getHistory(1))
         .map<Object>((List<History> coin) => Get1DayHistorySuccessful(coin))
         .onErrorReturnWith((Object error, StackTrace stackTrace) => Get1DayHistoryError(error))
@@ -51,7 +64,7 @@ class AppEpics {
   }
 
   Stream<dynamic> get14DaysHistory(Stream<Get14DaysHistory> actions, EpicStore<AppState> store) {
-    return actions.flatMap((Get14DaysHistory action) => Stream<void>.value(null)
+    return actions.flatMap<void>((Get14DaysHistory action) => Stream<void>.value(null)
         .asyncMap((_) => _coinApi.getHistory(14))
         .map<Object>((List<History> coin) => Get14DaysHistorySuccessful(coin))
         .onErrorReturnWith((Object error, StackTrace stackTrace) => Get14DaysHistoryError(error))
@@ -59,7 +72,7 @@ class AppEpics {
   }
 
   Stream<dynamic> get30DaysHistory(Stream<Get30DaysHistory> actions, EpicStore<AppState> store) {
-    return actions.flatMap((Get30DaysHistory action) => Stream<void>.value(null)
+    return actions.flatMap<void>((Get30DaysHistory action) => Stream<void>.value(null)
         .asyncMap((_) => _coinApi.getHistory(30))
         .map<Object>((List<History> coin) => Get30DaysHistorySuccessful(coin))
         .onErrorReturnWith((Object error, StackTrace stackTrace) => Get30DaysHistoryError(error))

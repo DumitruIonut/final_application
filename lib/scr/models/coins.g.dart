@@ -14,22 +14,29 @@ _$Coins$ _$$Coins$FromJson(Map<String, dynamic> json) => _$Coins$(
       current_price: (json['current_price'] as num?)?.toDouble() ?? 0.0,
       market_cap: (json['market_cap'] as num?)?.toDouble() ?? 0.0,
       market_cap_rank: (json['market_cap_rank'] as num?)?.toDouble() ?? 0.0,
-      fully_diluted_valuation: (json['fully_diluted_valuation'] as num?)?.toDouble() ?? 0.0,
+      fully_diluted_valuation:
+          (json['fully_diluted_valuation'] as num?)?.toDouble() ?? 0.0,
       total_volume: (json['total_volume'] as num?)?.toDouble() ?? 0.0,
       high_24h: (json['high_24h'] as num?)?.toDouble() ?? 0.0,
       low_24h: (json['low_24h'] as num?)?.toDouble() ?? 0.0,
       price_change_24h: (json['price_change_24h'] as num?)?.toDouble() ?? 0.0,
-      price_change_percentage_24h: (json['price_change_percentage_24h'] as num?)?.toDouble() ?? 0.0,
-      market_cap_change_24h: (json['market_cap_change_24h'] as num?)?.toDouble() ?? 0.0,
-      market_cap_change_percentage_24h: (json['market_cap_change_percentage_24h'] as num?)?.toDouble() ?? 0.0,
-      circulating_supply: (json['circulating_supply'] as num?)?.toDouble() ?? 0.0,
+      price_change_percentage_24h:
+          (json['price_change_percentage_24h'] as num?)?.toDouble() ?? 0.0,
+      market_cap_change_24h:
+          (json['market_cap_change_24h'] as num?)?.toDouble() ?? 0.0,
+      market_cap_change_percentage_24h:
+          (json['market_cap_change_percentage_24h'] as num?)?.toDouble() ?? 0.0,
+      circulating_supply:
+          (json['circulating_supply'] as num?)?.toDouble() ?? 0.0,
       total_supply: (json['total_supply'] as num?)?.toDouble() ?? 0.0,
       max_supply: (json['max_supply'] as num?)?.toDouble() ?? 0.0,
       ath: (json['ath'] as num?)?.toDouble() ?? 0.0,
-      ath_change_percentage: (json['ath_change_percentage'] as num?)?.toDouble() ?? 0.0,
+      ath_change_percentage:
+          (json['ath_change_percentage'] as num?)?.toDouble() ?? 0.0,
       ath_date: json['ath_date'] as String? ?? ' ',
       atl: (json['atl'] as num?)?.toDouble() ?? 0.0,
-      atl_change_percentage: (json['atl_change_percentage'] as num?)?.toDouble() ?? 0.0,
+      atl_change_percentage:
+          (json['atl_change_percentage'] as num?)?.toDouble() ?? 0.0,
       atl_date: json['atl_date'] as String? ?? ' ',
       roi: json['roi'],
       last_updated: json['last_updated'] as String? ?? ' ',
@@ -50,7 +57,8 @@ Map<String, dynamic> _$$Coins$ToJson(_$Coins$ instance) => <String, dynamic>{
       'price_change_24h': instance.price_change_24h,
       'price_change_percentage_24h': instance.price_change_percentage_24h,
       'market_cap_change_24h': instance.market_cap_change_24h,
-      'market_cap_change_percentage_24h': instance.market_cap_change_percentage_24h,
+      'market_cap_change_percentage_24h':
+          instance.market_cap_change_percentage_24h,
       'circulating_supply': instance.circulating_supply,
       'total_supply': instance.total_supply,
       'max_supply': instance.max_supply,
