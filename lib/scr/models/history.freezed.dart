@@ -48,8 +48,7 @@ mixin _$History {
 
 /// @nodoc
 abstract class $HistoryCopyWith<$Res> {
-  factory $HistoryCopyWith(History value, $Res Function(History) then) =
-      _$HistoryCopyWithImpl<$Res>;
+  factory $HistoryCopyWith(History value, $Res Function(History) then) = _$HistoryCopyWithImpl<$Res>;
   $Res call({double time, double value});
 }
 
@@ -81,17 +80,14 @@ class _$HistoryCopyWithImpl<$Res> implements $HistoryCopyWith<$Res> {
 
 /// @nodoc
 abstract class $History$CopyWith<$Res> implements $HistoryCopyWith<$Res> {
-  factory $History$CopyWith(History$ value, $Res Function(History$) then) =
-      _$History$CopyWithImpl<$Res>;
+  factory $History$CopyWith(History$ value, $Res Function(History$) then) = _$History$CopyWithImpl<$Res>;
   @override
   $Res call({double time, double value});
 }
 
 /// @nodoc
-class _$History$CopyWithImpl<$Res> extends _$HistoryCopyWithImpl<$Res>
-    implements $History$CopyWith<$Res> {
-  _$History$CopyWithImpl(History$ _value, $Res Function(History$) _then)
-      : super(_value, (v) => _then(v as History$));
+class _$History$CopyWithImpl<$Res> extends _$HistoryCopyWithImpl<$Res> implements $History$CopyWith<$Res> {
+  _$History$CopyWithImpl(History$ _value, $Res Function(History$) _then) : super(_value, (v) => _then(v as History$));
 
   @override
   History$ get _value => super._value as History$;
@@ -119,8 +115,7 @@ class _$History$CopyWithImpl<$Res> extends _$HistoryCopyWithImpl<$Res>
 class _$History$ implements History$ {
   const _$History$({this.time = 0.00, this.value = 0.00});
 
-  factory _$History$.fromJson(Map<String, dynamic> json) =>
-      _$$History$FromJson(json);
+  factory _$History$.fromJson(Map<String, dynamic> json) => _$$History$FromJson(json);
 
   @JsonKey(defaultValue: 0.00)
   @override
@@ -144,15 +139,12 @@ class _$History$ implements History$ {
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(time),
-      const DeepCollectionEquality().hash(value));
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(time), const DeepCollectionEquality().hash(value));
 
   @JsonKey(ignore: true)
   @override
-  $History$CopyWith<History$> get copyWith =>
-      _$History$CopyWithImpl<History$>(this, _$identity);
+  $History$CopyWith<History$> get copyWith => _$History$CopyWithImpl<History$>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -171,6 +163,5 @@ abstract class History$ implements History {
   double get value;
   @override
   @JsonKey(ignore: true)
-  $History$CopyWith<History$> get copyWith =>
-      throw _privateConstructorUsedError;
+  $History$CopyWith<History$> get copyWith => throw _privateConstructorUsedError;
 }

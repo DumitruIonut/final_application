@@ -48,6 +48,6 @@ class CoinGenckoApi {
     final Map<dynamic, dynamic> info = jsonDecode(response.body) as Map<dynamic, dynamic>;
     final List<dynamic> data = info['prices'] as List<dynamic>;
 
-    return data.map((dynamic item) => History.fromJson(<dynamic, dynamic> {'time': item[0], 'value': item[1]})).toList();
+    return data.map((dynamic item) => History.fromJson(<dynamic, dynamic>{'time': item[0], 'value': item[1]})).toList();
   }
 }

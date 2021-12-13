@@ -63,14 +63,12 @@ mixin _$AppState {
   List<History> get history30Days => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $AppStateCopyWith<AppState> get copyWith =>
-      throw _privateConstructorUsedError;
+  $AppStateCopyWith<AppState> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $AppStateCopyWith<$Res> {
-  factory $AppStateCopyWith(AppState value, $Res Function(AppState) then) =
-      _$AppStateCopyWithImpl<$Res>;
+  factory $AppStateCopyWith(AppState value, $Res Function(AppState) then) = _$AppStateCopyWithImpl<$Res>;
   $Res call(
       {List<Coins> coins,
       bool isLoadingCoinApi,
@@ -171,8 +169,7 @@ class _$AppStateCopyWithImpl<$Res> implements $AppStateCopyWith<$Res> {
 
 /// @nodoc
 abstract class $AppState$CopyWith<$Res> implements $AppStateCopyWith<$Res> {
-  factory $AppState$CopyWith(AppState$ value, $Res Function(AppState$) then) =
-      _$AppState$CopyWithImpl<$Res>;
+  factory $AppState$CopyWith(AppState$ value, $Res Function(AppState$) then) = _$AppState$CopyWithImpl<$Res>;
   @override
   $Res call(
       {List<Coins> coins,
@@ -192,8 +189,7 @@ abstract class $AppState$CopyWith<$Res> implements $AppStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AppState$CopyWithImpl<$Res> extends _$AppStateCopyWithImpl<$Res>
-    implements $AppState$CopyWith<$Res> {
+class _$AppState$CopyWithImpl<$Res> extends _$AppStateCopyWithImpl<$Res> implements $AppState$CopyWith<$Res> {
   _$AppState$CopyWithImpl(AppState$ _value, $Res Function(AppState$) _then)
       : super(_value, (v) => _then(v as AppState$));
 
@@ -323,25 +319,16 @@ class _$AppState$ implements AppState$ {
         (other.runtimeType == runtimeType &&
             other is AppState$ &&
             const DeepCollectionEquality().equals(other.coins, coins) &&
-            const DeepCollectionEquality()
-                .equals(other.isLoadingCoinApi, isLoadingCoinApi) &&
-            const DeepCollectionEquality()
-                .equals(other.isLoadingWeatherApi, isLoadingWeatherApi) &&
-            const DeepCollectionEquality()
-                .equals(other.isLoadingHistoryApi, isLoadingHistoryApi) &&
-            const DeepCollectionEquality()
-                .equals(other.dataLoadComplete, dataLoadComplete) &&
+            const DeepCollectionEquality().equals(other.isLoadingCoinApi, isLoadingCoinApi) &&
+            const DeepCollectionEquality().equals(other.isLoadingWeatherApi, isLoadingWeatherApi) &&
+            const DeepCollectionEquality().equals(other.isLoadingHistoryApi, isLoadingHistoryApi) &&
+            const DeepCollectionEquality().equals(other.dataLoadComplete, dataLoadComplete) &&
             const DeepCollectionEquality().equals(other.info, info) &&
-            const DeepCollectionEquality()
-                .equals(other.isServiceEnabled, isServiceEnabled) &&
-            const DeepCollectionEquality()
-                .equals(other.selectedCoin, selectedCoin) &&
-            const DeepCollectionEquality()
-                .equals(other.history1Day, history1Day) &&
-            const DeepCollectionEquality()
-                .equals(other.history14Days, history14Days) &&
-            const DeepCollectionEquality()
-                .equals(other.history30Days, history30Days));
+            const DeepCollectionEquality().equals(other.isServiceEnabled, isServiceEnabled) &&
+            const DeepCollectionEquality().equals(other.selectedCoin, selectedCoin) &&
+            const DeepCollectionEquality().equals(other.history1Day, history1Day) &&
+            const DeepCollectionEquality().equals(other.history14Days, history14Days) &&
+            const DeepCollectionEquality().equals(other.history30Days, history30Days));
   }
 
   @override
@@ -361,8 +348,7 @@ class _$AppState$ implements AppState$ {
 
   @JsonKey(ignore: true)
   @override
-  $AppState$CopyWith<AppState$> get copyWith =>
-      _$AppState$CopyWithImpl<AppState$>(this, _$identity);
+  $AppState$CopyWith<AppState$> get copyWith => _$AppState$CopyWithImpl<AppState$>(this, _$identity);
 }
 
 abstract class AppState$ implements AppState {
@@ -403,6 +389,5 @@ abstract class AppState$ implements AppState {
   List<History> get history30Days;
   @override
   @JsonKey(ignore: true)
-  $AppState$CopyWith<AppState$> get copyWith =>
-      throw _privateConstructorUsedError;
+  $AppState$CopyWith<AppState$> get copyWith => throw _privateConstructorUsedError;
 }

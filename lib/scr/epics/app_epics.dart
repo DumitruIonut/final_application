@@ -35,9 +35,6 @@ class AppEpics {
   //       .doOnData(action.result));
   // }
 
-
-
-
   Stream<dynamic> getWeather(Stream<GetWeather> actions, EpicStore<AppState> store) {
     return actions.flatMap<void>((GetWeather action) => Stream<void>.value(null)
         .switchMap((_) => Stream<void>.periodic(const Duration(seconds: 1)))

@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
                                 final Store<AppState> store = StoreProvider.of<AppState>(context);
                                 store.state.coins
                                     .map((e) => [
-                                          if (e.name == value) <void> {store.dispatch(GetSelectedCoin(e))}
+                                          if (e.name == value) <void>{store.dispatch(GetSelectedCoin(e))}
                                         ])
                                     .toList();
                                 store.dispatch(Get1DayHistory(onResult));
