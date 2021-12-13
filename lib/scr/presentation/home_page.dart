@@ -90,7 +90,7 @@ class _HomePageState extends State<HomePage> {
                               setState(() {
                                 final Store<AppState> store = StoreProvider.of<AppState>(context);
                                 store.state.coins
-                                    .map((e) => [
+                                    .map((Coins e) => <dynamic>[
                                           if (e.name == value) <void>{store.dispatch(GetSelectedCoin(e))}
                                         ])
                                     .toList();
@@ -277,7 +277,7 @@ class _HomePageState extends State<HomePage> {
                               Padding(
                                 padding: const EdgeInsets.symmetric(vertical: 8.0),
                                 child: Text(
-                                  '${store.state.selectedCoin!.current_price}',
+                                  '${store.state.selectedCoin!.currentPrice}',
                                   textAlign: TextAlign.center,
                                   style: const TextStyle(
                                     color: Color(0xFFA0C9C5),
@@ -301,7 +301,7 @@ class _HomePageState extends State<HomePage> {
                               Padding(
                                 padding: const EdgeInsets.symmetric(vertical: 8.0),
                                 child: Text(
-                                  '${store.state.selectedCoin!.low_24h}',
+                                  '${store.state.selectedCoin!.low24h}',
                                   textAlign: TextAlign.center,
                                   style: const TextStyle(
                                     color: Color(0xFFA0C9C5),
@@ -325,7 +325,7 @@ class _HomePageState extends State<HomePage> {
                               Padding(
                                 padding: const EdgeInsets.symmetric(vertical: 8.0),
                                 child: Text(
-                                  '${store.state.selectedCoin!.high_24h}',
+                                  '${store.state.selectedCoin!.high24h}',
                                   textAlign: TextAlign.center,
                                   style: const TextStyle(
                                     color: Color(0xFFA0C9C5),

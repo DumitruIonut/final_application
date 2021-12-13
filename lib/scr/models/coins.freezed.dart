@@ -26,55 +26,55 @@ class _$CoinsTearOff {
       String symbol = ' ',
       String name = ' ',
       String image = ' ',
-      double current_price = 0.00,
-      double market_cap = 0.00,
-      double market_cap_rank = 0.00,
-      double fully_diluted_valuation = 0.00,
-      double total_volume = 0.00,
-      double high_24h = 0.00,
-      double low_24h = 0.00,
-      double price_change_24h = 0.00,
-      double price_change_percentage_24h = 0.00,
-      double market_cap_change_24h = 0.00,
-      double market_cap_change_percentage_24h = 0.00,
-      double circulating_supply = 0.00,
-      double total_supply = 0.00,
-      double max_supply = 0.00,
+      double currentPrice = 0.00,
+      double marketCap = 0.00,
+      double marketCapRank = 0.00,
+      double fullyDilutedValuation = 0.00,
+      double totalVolume = 0.00,
+      double high24h = 0.00,
+      double low24h = 0.00,
+      double priceChange24h = 0.00,
+      double priceChangePercentage24h = 0.00,
+      double marketCapChange24h = 0.00,
+      double marketCapChangePercentage24h = 0.00,
+      double circulatingSupply = 0.00,
+      double totalSupply = 0.00,
+      double maxSupply = 0.00,
       double ath = 0.00,
-      double ath_change_percentage = 0.00,
-      String ath_date = ' ',
+      double athChangePercentage = 0.00,
+      String athDate = ' ',
       double atl = 0.00,
-      double atl_change_percentage = 0.00,
-      String atl_date = ' ',
+      double atlChangePercentage = 0.00,
+      String atlDate = ' ',
       Object? roi,
-      String last_updated = ' '}) {
+      String lastPpdated = ' '}) {
     return Coins$(
       id: id,
       symbol: symbol,
       name: name,
       image: image,
-      current_price: current_price,
-      market_cap: market_cap,
-      market_cap_rank: market_cap_rank,
-      fully_diluted_valuation: fully_diluted_valuation,
-      total_volume: total_volume,
-      high_24h: high_24h,
-      low_24h: low_24h,
-      price_change_24h: price_change_24h,
-      price_change_percentage_24h: price_change_percentage_24h,
-      market_cap_change_24h: market_cap_change_24h,
-      market_cap_change_percentage_24h: market_cap_change_percentage_24h,
-      circulating_supply: circulating_supply,
-      total_supply: total_supply,
-      max_supply: max_supply,
+      currentPrice: currentPrice,
+      marketCap: marketCap,
+      marketCapRank: marketCapRank,
+      fullyDilutedValuation: fullyDilutedValuation,
+      totalVolume: totalVolume,
+      high24h: high24h,
+      low24h: low24h,
+      priceChange24h: priceChange24h,
+      priceChangePercentage24h: priceChangePercentage24h,
+      marketCapChange24h: marketCapChange24h,
+      marketCapChangePercentage24h: marketCapChangePercentage24h,
+      circulatingSupply: circulatingSupply,
+      totalSupply: totalSupply,
+      maxSupply: maxSupply,
       ath: ath,
-      ath_change_percentage: ath_change_percentage,
-      ath_date: ath_date,
+      athChangePercentage: athChangePercentage,
+      athDate: athDate,
       atl: atl,
-      atl_change_percentage: atl_change_percentage,
-      atl_date: atl_date,
+      atlChangePercentage: atlChangePercentage,
+      atlDate: atlDate,
       roi: roi,
-      last_updated: last_updated,
+      lastPpdated: lastPpdated,
     );
   }
 
@@ -92,28 +92,28 @@ mixin _$Coins {
   String get symbol => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
   String get image => throw _privateConstructorUsedError;
-  double get current_price => throw _privateConstructorUsedError;
-  double get market_cap => throw _privateConstructorUsedError;
-  double get market_cap_rank => throw _privateConstructorUsedError;
-  double get fully_diluted_valuation => throw _privateConstructorUsedError;
-  double get total_volume => throw _privateConstructorUsedError;
-  double get high_24h => throw _privateConstructorUsedError;
-  double get low_24h => throw _privateConstructorUsedError;
-  double get price_change_24h => throw _privateConstructorUsedError;
-  double get price_change_percentage_24h => throw _privateConstructorUsedError;
-  double get market_cap_change_24h => throw _privateConstructorUsedError;
-  double get market_cap_change_percentage_24h => throw _privateConstructorUsedError;
-  double get circulating_supply => throw _privateConstructorUsedError;
-  double get total_supply => throw _privateConstructorUsedError;
-  double get max_supply => throw _privateConstructorUsedError;
+  double get currentPrice => throw _privateConstructorUsedError;
+  double get marketCap => throw _privateConstructorUsedError;
+  double get marketCapRank => throw _privateConstructorUsedError;
+  double get fullyDilutedValuation => throw _privateConstructorUsedError;
+  double get totalVolume => throw _privateConstructorUsedError;
+  double get high24h => throw _privateConstructorUsedError;
+  double get low24h => throw _privateConstructorUsedError;
+  double get priceChange24h => throw _privateConstructorUsedError;
+  double get priceChangePercentage24h => throw _privateConstructorUsedError;
+  double get marketCapChange24h => throw _privateConstructorUsedError;
+  double get marketCapChangePercentage24h => throw _privateConstructorUsedError;
+  double get circulatingSupply => throw _privateConstructorUsedError;
+  double get totalSupply => throw _privateConstructorUsedError;
+  double get maxSupply => throw _privateConstructorUsedError;
   double get ath => throw _privateConstructorUsedError;
-  double get ath_change_percentage => throw _privateConstructorUsedError;
-  String get ath_date => throw _privateConstructorUsedError;
+  double get athChangePercentage => throw _privateConstructorUsedError;
+  String get athDate => throw _privateConstructorUsedError;
   double get atl => throw _privateConstructorUsedError;
-  double get atl_change_percentage => throw _privateConstructorUsedError;
-  String get atl_date => throw _privateConstructorUsedError;
+  double get atlChangePercentage => throw _privateConstructorUsedError;
+  String get atlDate => throw _privateConstructorUsedError;
   Object? get roi => throw _privateConstructorUsedError;
-  String get last_updated => throw _privateConstructorUsedError;
+  String get lastPpdated => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -128,28 +128,28 @@ abstract class $CoinsCopyWith<$Res> {
       String symbol,
       String name,
       String image,
-      double current_price,
-      double market_cap,
-      double market_cap_rank,
-      double fully_diluted_valuation,
-      double total_volume,
-      double high_24h,
-      double low_24h,
-      double price_change_24h,
-      double price_change_percentage_24h,
-      double market_cap_change_24h,
-      double market_cap_change_percentage_24h,
-      double circulating_supply,
-      double total_supply,
-      double max_supply,
+      double currentPrice,
+      double marketCap,
+      double marketCapRank,
+      double fullyDilutedValuation,
+      double totalVolume,
+      double high24h,
+      double low24h,
+      double priceChange24h,
+      double priceChangePercentage24h,
+      double marketCapChange24h,
+      double marketCapChangePercentage24h,
+      double circulatingSupply,
+      double totalSupply,
+      double maxSupply,
       double ath,
-      double ath_change_percentage,
-      String ath_date,
+      double athChangePercentage,
+      String athDate,
       double atl,
-      double atl_change_percentage,
-      String atl_date,
+      double atlChangePercentage,
+      String atlDate,
       Object? roi,
-      String last_updated});
+      String lastPpdated});
 }
 
 /// @nodoc
@@ -166,28 +166,28 @@ class _$CoinsCopyWithImpl<$Res> implements $CoinsCopyWith<$Res> {
     Object? symbol = freezed,
     Object? name = freezed,
     Object? image = freezed,
-    Object? current_price = freezed,
-    Object? market_cap = freezed,
-    Object? market_cap_rank = freezed,
-    Object? fully_diluted_valuation = freezed,
-    Object? total_volume = freezed,
-    Object? high_24h = freezed,
-    Object? low_24h = freezed,
-    Object? price_change_24h = freezed,
-    Object? price_change_percentage_24h = freezed,
-    Object? market_cap_change_24h = freezed,
-    Object? market_cap_change_percentage_24h = freezed,
-    Object? circulating_supply = freezed,
-    Object? total_supply = freezed,
-    Object? max_supply = freezed,
+    Object? currentPrice = freezed,
+    Object? marketCap = freezed,
+    Object? marketCapRank = freezed,
+    Object? fullyDilutedValuation = freezed,
+    Object? totalVolume = freezed,
+    Object? high24h = freezed,
+    Object? low24h = freezed,
+    Object? priceChange24h = freezed,
+    Object? priceChangePercentage24h = freezed,
+    Object? marketCapChange24h = freezed,
+    Object? marketCapChangePercentage24h = freezed,
+    Object? circulatingSupply = freezed,
+    Object? totalSupply = freezed,
+    Object? maxSupply = freezed,
     Object? ath = freezed,
-    Object? ath_change_percentage = freezed,
-    Object? ath_date = freezed,
+    Object? athChangePercentage = freezed,
+    Object? athDate = freezed,
     Object? atl = freezed,
-    Object? atl_change_percentage = freezed,
-    Object? atl_date = freezed,
+    Object? atlChangePercentage = freezed,
+    Object? atlDate = freezed,
     Object? roi = freezed,
-    Object? last_updated = freezed,
+    Object? lastPpdated = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed
@@ -206,90 +206,90 @@ class _$CoinsCopyWithImpl<$Res> implements $CoinsCopyWith<$Res> {
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
               as String,
-      current_price: current_price == freezed
-          ? _value.current_price
-          : current_price // ignore: cast_nullable_to_non_nullable
+      currentPrice: currentPrice == freezed
+          ? _value.currentPrice
+          : currentPrice // ignore: cast_nullable_to_non_nullable
               as double,
-      market_cap: market_cap == freezed
-          ? _value.market_cap
-          : market_cap // ignore: cast_nullable_to_non_nullable
+      marketCap: marketCap == freezed
+          ? _value.marketCap
+          : marketCap // ignore: cast_nullable_to_non_nullable
               as double,
-      market_cap_rank: market_cap_rank == freezed
-          ? _value.market_cap_rank
-          : market_cap_rank // ignore: cast_nullable_to_non_nullable
+      marketCapRank: marketCapRank == freezed
+          ? _value.marketCapRank
+          : marketCapRank // ignore: cast_nullable_to_non_nullable
               as double,
-      fully_diluted_valuation: fully_diluted_valuation == freezed
-          ? _value.fully_diluted_valuation
-          : fully_diluted_valuation // ignore: cast_nullable_to_non_nullable
+      fullyDilutedValuation: fullyDilutedValuation == freezed
+          ? _value.fullyDilutedValuation
+          : fullyDilutedValuation // ignore: cast_nullable_to_non_nullable
               as double,
-      total_volume: total_volume == freezed
-          ? _value.total_volume
-          : total_volume // ignore: cast_nullable_to_non_nullable
+      totalVolume: totalVolume == freezed
+          ? _value.totalVolume
+          : totalVolume // ignore: cast_nullable_to_non_nullable
               as double,
-      high_24h: high_24h == freezed
-          ? _value.high_24h
-          : high_24h // ignore: cast_nullable_to_non_nullable
+      high24h: high24h == freezed
+          ? _value.high24h
+          : high24h // ignore: cast_nullable_to_non_nullable
               as double,
-      low_24h: low_24h == freezed
-          ? _value.low_24h
-          : low_24h // ignore: cast_nullable_to_non_nullable
+      low24h: low24h == freezed
+          ? _value.low24h
+          : low24h // ignore: cast_nullable_to_non_nullable
               as double,
-      price_change_24h: price_change_24h == freezed
-          ? _value.price_change_24h
-          : price_change_24h // ignore: cast_nullable_to_non_nullable
+      priceChange24h: priceChange24h == freezed
+          ? _value.priceChange24h
+          : priceChange24h // ignore: cast_nullable_to_non_nullable
               as double,
-      price_change_percentage_24h: price_change_percentage_24h == freezed
-          ? _value.price_change_percentage_24h
-          : price_change_percentage_24h // ignore: cast_nullable_to_non_nullable
+      priceChangePercentage24h: priceChangePercentage24h == freezed
+          ? _value.priceChangePercentage24h
+          : priceChangePercentage24h // ignore: cast_nullable_to_non_nullable
               as double,
-      market_cap_change_24h: market_cap_change_24h == freezed
-          ? _value.market_cap_change_24h
-          : market_cap_change_24h // ignore: cast_nullable_to_non_nullable
+      marketCapChange24h: marketCapChange24h == freezed
+          ? _value.marketCapChange24h
+          : marketCapChange24h // ignore: cast_nullable_to_non_nullable
               as double,
-      market_cap_change_percentage_24h: market_cap_change_percentage_24h == freezed
-          ? _value.market_cap_change_percentage_24h
-          : market_cap_change_percentage_24h // ignore: cast_nullable_to_non_nullable
+      marketCapChangePercentage24h: marketCapChangePercentage24h == freezed
+          ? _value.marketCapChangePercentage24h
+          : marketCapChangePercentage24h // ignore: cast_nullable_to_non_nullable
               as double,
-      circulating_supply: circulating_supply == freezed
-          ? _value.circulating_supply
-          : circulating_supply // ignore: cast_nullable_to_non_nullable
+      circulatingSupply: circulatingSupply == freezed
+          ? _value.circulatingSupply
+          : circulatingSupply // ignore: cast_nullable_to_non_nullable
               as double,
-      total_supply: total_supply == freezed
-          ? _value.total_supply
-          : total_supply // ignore: cast_nullable_to_non_nullable
+      totalSupply: totalSupply == freezed
+          ? _value.totalSupply
+          : totalSupply // ignore: cast_nullable_to_non_nullable
               as double,
-      max_supply: max_supply == freezed
-          ? _value.max_supply
-          : max_supply // ignore: cast_nullable_to_non_nullable
+      maxSupply: maxSupply == freezed
+          ? _value.maxSupply
+          : maxSupply // ignore: cast_nullable_to_non_nullable
               as double,
       ath: ath == freezed
           ? _value.ath
           : ath // ignore: cast_nullable_to_non_nullable
               as double,
-      ath_change_percentage: ath_change_percentage == freezed
-          ? _value.ath_change_percentage
-          : ath_change_percentage // ignore: cast_nullable_to_non_nullable
+      athChangePercentage: athChangePercentage == freezed
+          ? _value.athChangePercentage
+          : athChangePercentage // ignore: cast_nullable_to_non_nullable
               as double,
-      ath_date: ath_date == freezed
-          ? _value.ath_date
-          : ath_date // ignore: cast_nullable_to_non_nullable
+      athDate: athDate == freezed
+          ? _value.athDate
+          : athDate // ignore: cast_nullable_to_non_nullable
               as String,
       atl: atl == freezed
           ? _value.atl
           : atl // ignore: cast_nullable_to_non_nullable
               as double,
-      atl_change_percentage: atl_change_percentage == freezed
-          ? _value.atl_change_percentage
-          : atl_change_percentage // ignore: cast_nullable_to_non_nullable
+      atlChangePercentage: atlChangePercentage == freezed
+          ? _value.atlChangePercentage
+          : atlChangePercentage // ignore: cast_nullable_to_non_nullable
               as double,
-      atl_date: atl_date == freezed
-          ? _value.atl_date
-          : atl_date // ignore: cast_nullable_to_non_nullable
+      atlDate: atlDate == freezed
+          ? _value.atlDate
+          : atlDate // ignore: cast_nullable_to_non_nullable
               as String,
       roi: roi == freezed ? _value.roi : roi,
-      last_updated: last_updated == freezed
-          ? _value.last_updated
-          : last_updated // ignore: cast_nullable_to_non_nullable
+      lastPpdated: lastPpdated == freezed
+          ? _value.lastPpdated
+          : lastPpdated // ignore: cast_nullable_to_non_nullable
               as String,
     ));
   }
@@ -304,28 +304,28 @@ abstract class $Coins$CopyWith<$Res> implements $CoinsCopyWith<$Res> {
       String symbol,
       String name,
       String image,
-      double current_price,
-      double market_cap,
-      double market_cap_rank,
-      double fully_diluted_valuation,
-      double total_volume,
-      double high_24h,
-      double low_24h,
-      double price_change_24h,
-      double price_change_percentage_24h,
-      double market_cap_change_24h,
-      double market_cap_change_percentage_24h,
-      double circulating_supply,
-      double total_supply,
-      double max_supply,
+      double currentPrice,
+      double marketCap,
+      double marketCapRank,
+      double fullyDilutedValuation,
+      double totalVolume,
+      double high24h,
+      double low24h,
+      double priceChange24h,
+      double priceChangePercentage24h,
+      double marketCapChange24h,
+      double marketCapChangePercentage24h,
+      double circulatingSupply,
+      double totalSupply,
+      double maxSupply,
       double ath,
-      double ath_change_percentage,
-      String ath_date,
+      double athChangePercentage,
+      String athDate,
       double atl,
-      double atl_change_percentage,
-      String atl_date,
+      double atlChangePercentage,
+      String atlDate,
       Object? roi,
-      String last_updated});
+      String lastPpdated});
 }
 
 /// @nodoc
@@ -341,28 +341,28 @@ class _$Coins$CopyWithImpl<$Res> extends _$CoinsCopyWithImpl<$Res> implements $C
     Object? symbol = freezed,
     Object? name = freezed,
     Object? image = freezed,
-    Object? current_price = freezed,
-    Object? market_cap = freezed,
-    Object? market_cap_rank = freezed,
-    Object? fully_diluted_valuation = freezed,
-    Object? total_volume = freezed,
-    Object? high_24h = freezed,
-    Object? low_24h = freezed,
-    Object? price_change_24h = freezed,
-    Object? price_change_percentage_24h = freezed,
-    Object? market_cap_change_24h = freezed,
-    Object? market_cap_change_percentage_24h = freezed,
-    Object? circulating_supply = freezed,
-    Object? total_supply = freezed,
-    Object? max_supply = freezed,
+    Object? currentPrice = freezed,
+    Object? marketCap = freezed,
+    Object? marketCapRank = freezed,
+    Object? fullyDilutedValuation = freezed,
+    Object? totalVolume = freezed,
+    Object? high24h = freezed,
+    Object? low24h = freezed,
+    Object? priceChange24h = freezed,
+    Object? priceChangePercentage24h = freezed,
+    Object? marketCapChange24h = freezed,
+    Object? marketCapChangePercentage24h = freezed,
+    Object? circulatingSupply = freezed,
+    Object? totalSupply = freezed,
+    Object? maxSupply = freezed,
     Object? ath = freezed,
-    Object? ath_change_percentage = freezed,
-    Object? ath_date = freezed,
+    Object? athChangePercentage = freezed,
+    Object? athDate = freezed,
     Object? atl = freezed,
-    Object? atl_change_percentage = freezed,
-    Object? atl_date = freezed,
+    Object? atlChangePercentage = freezed,
+    Object? atlDate = freezed,
     Object? roi = freezed,
-    Object? last_updated = freezed,
+    Object? lastPpdated = freezed,
   }) {
     return _then(Coins$(
       id: id == freezed
@@ -381,90 +381,90 @@ class _$Coins$CopyWithImpl<$Res> extends _$CoinsCopyWithImpl<$Res> implements $C
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
               as String,
-      current_price: current_price == freezed
-          ? _value.current_price
-          : current_price // ignore: cast_nullable_to_non_nullable
+      currentPrice: currentPrice == freezed
+          ? _value.currentPrice
+          : currentPrice // ignore: cast_nullable_to_non_nullable
               as double,
-      market_cap: market_cap == freezed
-          ? _value.market_cap
-          : market_cap // ignore: cast_nullable_to_non_nullable
+      marketCap: marketCap == freezed
+          ? _value.marketCap
+          : marketCap // ignore: cast_nullable_to_non_nullable
               as double,
-      market_cap_rank: market_cap_rank == freezed
-          ? _value.market_cap_rank
-          : market_cap_rank // ignore: cast_nullable_to_non_nullable
+      marketCapRank: marketCapRank == freezed
+          ? _value.marketCapRank
+          : marketCapRank // ignore: cast_nullable_to_non_nullable
               as double,
-      fully_diluted_valuation: fully_diluted_valuation == freezed
-          ? _value.fully_diluted_valuation
-          : fully_diluted_valuation // ignore: cast_nullable_to_non_nullable
+      fullyDilutedValuation: fullyDilutedValuation == freezed
+          ? _value.fullyDilutedValuation
+          : fullyDilutedValuation // ignore: cast_nullable_to_non_nullable
               as double,
-      total_volume: total_volume == freezed
-          ? _value.total_volume
-          : total_volume // ignore: cast_nullable_to_non_nullable
+      totalVolume: totalVolume == freezed
+          ? _value.totalVolume
+          : totalVolume // ignore: cast_nullable_to_non_nullable
               as double,
-      high_24h: high_24h == freezed
-          ? _value.high_24h
-          : high_24h // ignore: cast_nullable_to_non_nullable
+      high24h: high24h == freezed
+          ? _value.high24h
+          : high24h // ignore: cast_nullable_to_non_nullable
               as double,
-      low_24h: low_24h == freezed
-          ? _value.low_24h
-          : low_24h // ignore: cast_nullable_to_non_nullable
+      low24h: low24h == freezed
+          ? _value.low24h
+          : low24h // ignore: cast_nullable_to_non_nullable
               as double,
-      price_change_24h: price_change_24h == freezed
-          ? _value.price_change_24h
-          : price_change_24h // ignore: cast_nullable_to_non_nullable
+      priceChange24h: priceChange24h == freezed
+          ? _value.priceChange24h
+          : priceChange24h // ignore: cast_nullable_to_non_nullable
               as double,
-      price_change_percentage_24h: price_change_percentage_24h == freezed
-          ? _value.price_change_percentage_24h
-          : price_change_percentage_24h // ignore: cast_nullable_to_non_nullable
+      priceChangePercentage24h: priceChangePercentage24h == freezed
+          ? _value.priceChangePercentage24h
+          : priceChangePercentage24h // ignore: cast_nullable_to_non_nullable
               as double,
-      market_cap_change_24h: market_cap_change_24h == freezed
-          ? _value.market_cap_change_24h
-          : market_cap_change_24h // ignore: cast_nullable_to_non_nullable
+      marketCapChange24h: marketCapChange24h == freezed
+          ? _value.marketCapChange24h
+          : marketCapChange24h // ignore: cast_nullable_to_non_nullable
               as double,
-      market_cap_change_percentage_24h: market_cap_change_percentage_24h == freezed
-          ? _value.market_cap_change_percentage_24h
-          : market_cap_change_percentage_24h // ignore: cast_nullable_to_non_nullable
+      marketCapChangePercentage24h: marketCapChangePercentage24h == freezed
+          ? _value.marketCapChangePercentage24h
+          : marketCapChangePercentage24h // ignore: cast_nullable_to_non_nullable
               as double,
-      circulating_supply: circulating_supply == freezed
-          ? _value.circulating_supply
-          : circulating_supply // ignore: cast_nullable_to_non_nullable
+      circulatingSupply: circulatingSupply == freezed
+          ? _value.circulatingSupply
+          : circulatingSupply // ignore: cast_nullable_to_non_nullable
               as double,
-      total_supply: total_supply == freezed
-          ? _value.total_supply
-          : total_supply // ignore: cast_nullable_to_non_nullable
+      totalSupply: totalSupply == freezed
+          ? _value.totalSupply
+          : totalSupply // ignore: cast_nullable_to_non_nullable
               as double,
-      max_supply: max_supply == freezed
-          ? _value.max_supply
-          : max_supply // ignore: cast_nullable_to_non_nullable
+      maxSupply: maxSupply == freezed
+          ? _value.maxSupply
+          : maxSupply // ignore: cast_nullable_to_non_nullable
               as double,
       ath: ath == freezed
           ? _value.ath
           : ath // ignore: cast_nullable_to_non_nullable
               as double,
-      ath_change_percentage: ath_change_percentage == freezed
-          ? _value.ath_change_percentage
-          : ath_change_percentage // ignore: cast_nullable_to_non_nullable
+      athChangePercentage: athChangePercentage == freezed
+          ? _value.athChangePercentage
+          : athChangePercentage // ignore: cast_nullable_to_non_nullable
               as double,
-      ath_date: ath_date == freezed
-          ? _value.ath_date
-          : ath_date // ignore: cast_nullable_to_non_nullable
+      athDate: athDate == freezed
+          ? _value.athDate
+          : athDate // ignore: cast_nullable_to_non_nullable
               as String,
       atl: atl == freezed
           ? _value.atl
           : atl // ignore: cast_nullable_to_non_nullable
               as double,
-      atl_change_percentage: atl_change_percentage == freezed
-          ? _value.atl_change_percentage
-          : atl_change_percentage // ignore: cast_nullable_to_non_nullable
+      atlChangePercentage: atlChangePercentage == freezed
+          ? _value.atlChangePercentage
+          : atlChangePercentage // ignore: cast_nullable_to_non_nullable
               as double,
-      atl_date: atl_date == freezed
-          ? _value.atl_date
-          : atl_date // ignore: cast_nullable_to_non_nullable
+      atlDate: atlDate == freezed
+          ? _value.atlDate
+          : atlDate // ignore: cast_nullable_to_non_nullable
               as String,
       roi: roi == freezed ? _value.roi : roi,
-      last_updated: last_updated == freezed
-          ? _value.last_updated
-          : last_updated // ignore: cast_nullable_to_non_nullable
+      lastPpdated: lastPpdated == freezed
+          ? _value.lastPpdated
+          : lastPpdated // ignore: cast_nullable_to_non_nullable
               as String,
     ));
   }
@@ -478,28 +478,28 @@ class _$Coins$ implements Coins$ {
       this.symbol = ' ',
       this.name = ' ',
       this.image = ' ',
-      this.current_price = 0.00,
-      this.market_cap = 0.00,
-      this.market_cap_rank = 0.00,
-      this.fully_diluted_valuation = 0.00,
-      this.total_volume = 0.00,
-      this.high_24h = 0.00,
-      this.low_24h = 0.00,
-      this.price_change_24h = 0.00,
-      this.price_change_percentage_24h = 0.00,
-      this.market_cap_change_24h = 0.00,
-      this.market_cap_change_percentage_24h = 0.00,
-      this.circulating_supply = 0.00,
-      this.total_supply = 0.00,
-      this.max_supply = 0.00,
+      this.currentPrice = 0.00,
+      this.marketCap = 0.00,
+      this.marketCapRank = 0.00,
+      this.fullyDilutedValuation = 0.00,
+      this.totalVolume = 0.00,
+      this.high24h = 0.00,
+      this.low24h = 0.00,
+      this.priceChange24h = 0.00,
+      this.priceChangePercentage24h = 0.00,
+      this.marketCapChange24h = 0.00,
+      this.marketCapChangePercentage24h = 0.00,
+      this.circulatingSupply = 0.00,
+      this.totalSupply = 0.00,
+      this.maxSupply = 0.00,
       this.ath = 0.00,
-      this.ath_change_percentage = 0.00,
-      this.ath_date = ' ',
+      this.athChangePercentage = 0.00,
+      this.athDate = ' ',
       this.atl = 0.00,
-      this.atl_change_percentage = 0.00,
-      this.atl_date = ' ',
+      this.atlChangePercentage = 0.00,
+      this.atlDate = ' ',
       this.roi,
-      this.last_updated = ' '});
+      this.lastPpdated = ' '});
 
   factory _$Coins$.fromJson(Map<String, dynamic> json) => _$$Coins$FromJson(json);
 
@@ -517,73 +517,73 @@ class _$Coins$ implements Coins$ {
   final String image;
   @JsonKey(defaultValue: 0.00)
   @override
-  final double current_price;
+  final double currentPrice;
   @JsonKey(defaultValue: 0.00)
   @override
-  final double market_cap;
+  final double marketCap;
   @JsonKey(defaultValue: 0.00)
   @override
-  final double market_cap_rank;
+  final double marketCapRank;
   @JsonKey(defaultValue: 0.00)
   @override
-  final double fully_diluted_valuation;
+  final double fullyDilutedValuation;
   @JsonKey(defaultValue: 0.00)
   @override
-  final double total_volume;
+  final double totalVolume;
   @JsonKey(defaultValue: 0.00)
   @override
-  final double high_24h;
+  final double high24h;
   @JsonKey(defaultValue: 0.00)
   @override
-  final double low_24h;
+  final double low24h;
   @JsonKey(defaultValue: 0.00)
   @override
-  final double price_change_24h;
+  final double priceChange24h;
   @JsonKey(defaultValue: 0.00)
   @override
-  final double price_change_percentage_24h;
+  final double priceChangePercentage24h;
   @JsonKey(defaultValue: 0.00)
   @override
-  final double market_cap_change_24h;
+  final double marketCapChange24h;
   @JsonKey(defaultValue: 0.00)
   @override
-  final double market_cap_change_percentage_24h;
+  final double marketCapChangePercentage24h;
   @JsonKey(defaultValue: 0.00)
   @override
-  final double circulating_supply;
+  final double circulatingSupply;
   @JsonKey(defaultValue: 0.00)
   @override
-  final double total_supply;
+  final double totalSupply;
   @JsonKey(defaultValue: 0.00)
   @override
-  final double max_supply;
+  final double maxSupply;
   @JsonKey(defaultValue: 0.00)
   @override
   final double ath;
   @JsonKey(defaultValue: 0.00)
   @override
-  final double ath_change_percentage;
+  final double athChangePercentage;
   @JsonKey(defaultValue: ' ')
   @override
-  final String ath_date;
+  final String athDate;
   @JsonKey(defaultValue: 0.00)
   @override
   final double atl;
   @JsonKey(defaultValue: 0.00)
   @override
-  final double atl_change_percentage;
+  final double atlChangePercentage;
   @JsonKey(defaultValue: ' ')
   @override
-  final String atl_date;
+  final String atlDate;
   @override
   final Object? roi;
   @JsonKey(defaultValue: ' ')
   @override
-  final String last_updated;
+  final String lastPpdated;
 
   @override
   String toString() {
-    return 'Coins(id: $id, symbol: $symbol, name: $name, image: $image, current_price: $current_price, market_cap: $market_cap, market_cap_rank: $market_cap_rank, fully_diluted_valuation: $fully_diluted_valuation, total_volume: $total_volume, high_24h: $high_24h, low_24h: $low_24h, price_change_24h: $price_change_24h, price_change_percentage_24h: $price_change_percentage_24h, market_cap_change_24h: $market_cap_change_24h, market_cap_change_percentage_24h: $market_cap_change_percentage_24h, circulating_supply: $circulating_supply, total_supply: $total_supply, max_supply: $max_supply, ath: $ath, ath_change_percentage: $ath_change_percentage, ath_date: $ath_date, atl: $atl, atl_change_percentage: $atl_change_percentage, atl_date: $atl_date, roi: $roi, last_updated: $last_updated)';
+    return 'Coins(id: $id, symbol: $symbol, name: $name, image: $image, currentPrice: $currentPrice, marketCap: $marketCap, marketCapRank: $marketCapRank, fullyDilutedValuation: $fullyDilutedValuation, totalVolume: $totalVolume, high24h: $high24h, low24h: $low24h, priceChange24h: $priceChange24h, priceChangePercentage24h: $priceChangePercentage24h, marketCapChange24h: $marketCapChange24h, marketCapChangePercentage24h: $marketCapChangePercentage24h, circulatingSupply: $circulatingSupply, totalSupply: $totalSupply, maxSupply: $maxSupply, ath: $ath, athChangePercentage: $athChangePercentage, athDate: $athDate, atl: $atl, atlChangePercentage: $atlChangePercentage, atlDate: $atlDate, roi: $roi, lastPpdated: $lastPpdated)';
   }
 
   @override
@@ -595,29 +595,28 @@ class _$Coins$ implements Coins$ {
             const DeepCollectionEquality().equals(other.symbol, symbol) &&
             const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.image, image) &&
-            const DeepCollectionEquality().equals(other.current_price, current_price) &&
-            const DeepCollectionEquality().equals(other.market_cap, market_cap) &&
-            const DeepCollectionEquality().equals(other.market_cap_rank, market_cap_rank) &&
-            const DeepCollectionEquality().equals(other.fully_diluted_valuation, fully_diluted_valuation) &&
-            const DeepCollectionEquality().equals(other.total_volume, total_volume) &&
-            const DeepCollectionEquality().equals(other.high_24h, high_24h) &&
-            const DeepCollectionEquality().equals(other.low_24h, low_24h) &&
-            const DeepCollectionEquality().equals(other.price_change_24h, price_change_24h) &&
-            const DeepCollectionEquality().equals(other.price_change_percentage_24h, price_change_percentage_24h) &&
-            const DeepCollectionEquality().equals(other.market_cap_change_24h, market_cap_change_24h) &&
-            const DeepCollectionEquality()
-                .equals(other.market_cap_change_percentage_24h, market_cap_change_percentage_24h) &&
-            const DeepCollectionEquality().equals(other.circulating_supply, circulating_supply) &&
-            const DeepCollectionEquality().equals(other.total_supply, total_supply) &&
-            const DeepCollectionEquality().equals(other.max_supply, max_supply) &&
+            const DeepCollectionEquality().equals(other.currentPrice, currentPrice) &&
+            const DeepCollectionEquality().equals(other.marketCap, marketCap) &&
+            const DeepCollectionEquality().equals(other.marketCapRank, marketCapRank) &&
+            const DeepCollectionEquality().equals(other.fullyDilutedValuation, fullyDilutedValuation) &&
+            const DeepCollectionEquality().equals(other.totalVolume, totalVolume) &&
+            const DeepCollectionEquality().equals(other.high24h, high24h) &&
+            const DeepCollectionEquality().equals(other.low24h, low24h) &&
+            const DeepCollectionEquality().equals(other.priceChange24h, priceChange24h) &&
+            const DeepCollectionEquality().equals(other.priceChangePercentage24h, priceChangePercentage24h) &&
+            const DeepCollectionEquality().equals(other.marketCapChange24h, marketCapChange24h) &&
+            const DeepCollectionEquality().equals(other.marketCapChangePercentage24h, marketCapChangePercentage24h) &&
+            const DeepCollectionEquality().equals(other.circulatingSupply, circulatingSupply) &&
+            const DeepCollectionEquality().equals(other.totalSupply, totalSupply) &&
+            const DeepCollectionEquality().equals(other.maxSupply, maxSupply) &&
             const DeepCollectionEquality().equals(other.ath, ath) &&
-            const DeepCollectionEquality().equals(other.ath_change_percentage, ath_change_percentage) &&
-            const DeepCollectionEquality().equals(other.ath_date, ath_date) &&
+            const DeepCollectionEquality().equals(other.athChangePercentage, athChangePercentage) &&
+            const DeepCollectionEquality().equals(other.athDate, athDate) &&
             const DeepCollectionEquality().equals(other.atl, atl) &&
-            const DeepCollectionEquality().equals(other.atl_change_percentage, atl_change_percentage) &&
-            const DeepCollectionEquality().equals(other.atl_date, atl_date) &&
+            const DeepCollectionEquality().equals(other.atlChangePercentage, atlChangePercentage) &&
+            const DeepCollectionEquality().equals(other.atlDate, atlDate) &&
             const DeepCollectionEquality().equals(other.roi, roi) &&
-            const DeepCollectionEquality().equals(other.last_updated, last_updated));
+            const DeepCollectionEquality().equals(other.lastPpdated, lastPpdated));
   }
 
   @override
@@ -627,28 +626,28 @@ class _$Coins$ implements Coins$ {
         const DeepCollectionEquality().hash(symbol),
         const DeepCollectionEquality().hash(name),
         const DeepCollectionEquality().hash(image),
-        const DeepCollectionEquality().hash(current_price),
-        const DeepCollectionEquality().hash(market_cap),
-        const DeepCollectionEquality().hash(market_cap_rank),
-        const DeepCollectionEquality().hash(fully_diluted_valuation),
-        const DeepCollectionEquality().hash(total_volume),
-        const DeepCollectionEquality().hash(high_24h),
-        const DeepCollectionEquality().hash(low_24h),
-        const DeepCollectionEquality().hash(price_change_24h),
-        const DeepCollectionEquality().hash(price_change_percentage_24h),
-        const DeepCollectionEquality().hash(market_cap_change_24h),
-        const DeepCollectionEquality().hash(market_cap_change_percentage_24h),
-        const DeepCollectionEquality().hash(circulating_supply),
-        const DeepCollectionEquality().hash(total_supply),
-        const DeepCollectionEquality().hash(max_supply),
+        const DeepCollectionEquality().hash(currentPrice),
+        const DeepCollectionEquality().hash(marketCap),
+        const DeepCollectionEquality().hash(marketCapRank),
+        const DeepCollectionEquality().hash(fullyDilutedValuation),
+        const DeepCollectionEquality().hash(totalVolume),
+        const DeepCollectionEquality().hash(high24h),
+        const DeepCollectionEquality().hash(low24h),
+        const DeepCollectionEquality().hash(priceChange24h),
+        const DeepCollectionEquality().hash(priceChangePercentage24h),
+        const DeepCollectionEquality().hash(marketCapChange24h),
+        const DeepCollectionEquality().hash(marketCapChangePercentage24h),
+        const DeepCollectionEquality().hash(circulatingSupply),
+        const DeepCollectionEquality().hash(totalSupply),
+        const DeepCollectionEquality().hash(maxSupply),
         const DeepCollectionEquality().hash(ath),
-        const DeepCollectionEquality().hash(ath_change_percentage),
-        const DeepCollectionEquality().hash(ath_date),
+        const DeepCollectionEquality().hash(athChangePercentage),
+        const DeepCollectionEquality().hash(athDate),
         const DeepCollectionEquality().hash(atl),
-        const DeepCollectionEquality().hash(atl_change_percentage),
-        const DeepCollectionEquality().hash(atl_date),
+        const DeepCollectionEquality().hash(atlChangePercentage),
+        const DeepCollectionEquality().hash(atlDate),
         const DeepCollectionEquality().hash(roi),
-        const DeepCollectionEquality().hash(last_updated)
+        const DeepCollectionEquality().hash(lastPpdated)
       ]);
 
   @JsonKey(ignore: true)
@@ -667,28 +666,28 @@ abstract class Coins$ implements Coins {
       String symbol,
       String name,
       String image,
-      double current_price,
-      double market_cap,
-      double market_cap_rank,
-      double fully_diluted_valuation,
-      double total_volume,
-      double high_24h,
-      double low_24h,
-      double price_change_24h,
-      double price_change_percentage_24h,
-      double market_cap_change_24h,
-      double market_cap_change_percentage_24h,
-      double circulating_supply,
-      double total_supply,
-      double max_supply,
+      double currentPrice,
+      double marketCap,
+      double marketCapRank,
+      double fullyDilutedValuation,
+      double totalVolume,
+      double high24h,
+      double low24h,
+      double priceChange24h,
+      double priceChangePercentage24h,
+      double marketCapChange24h,
+      double marketCapChangePercentage24h,
+      double circulatingSupply,
+      double totalSupply,
+      double maxSupply,
       double ath,
-      double ath_change_percentage,
-      String ath_date,
+      double athChangePercentage,
+      String athDate,
       double atl,
-      double atl_change_percentage,
-      String atl_date,
+      double atlChangePercentage,
+      String atlDate,
       Object? roi,
-      String last_updated}) = _$Coins$;
+      String lastPpdated}) = _$Coins$;
 
   factory Coins$.fromJson(Map<String, dynamic> json) = _$Coins$.fromJson;
 
@@ -701,49 +700,49 @@ abstract class Coins$ implements Coins {
   @override
   String get image;
   @override
-  double get current_price;
+  double get currentPrice;
   @override
-  double get market_cap;
+  double get marketCap;
   @override
-  double get market_cap_rank;
+  double get marketCapRank;
   @override
-  double get fully_diluted_valuation;
+  double get fullyDilutedValuation;
   @override
-  double get total_volume;
+  double get totalVolume;
   @override
-  double get high_24h;
+  double get high24h;
   @override
-  double get low_24h;
+  double get low24h;
   @override
-  double get price_change_24h;
+  double get priceChange24h;
   @override
-  double get price_change_percentage_24h;
+  double get priceChangePercentage24h;
   @override
-  double get market_cap_change_24h;
+  double get marketCapChange24h;
   @override
-  double get market_cap_change_percentage_24h;
+  double get marketCapChangePercentage24h;
   @override
-  double get circulating_supply;
+  double get circulatingSupply;
   @override
-  double get total_supply;
+  double get totalSupply;
   @override
-  double get max_supply;
+  double get maxSupply;
   @override
   double get ath;
   @override
-  double get ath_change_percentage;
+  double get athChangePercentage;
   @override
-  String get ath_date;
+  String get athDate;
   @override
   double get atl;
   @override
-  double get atl_change_percentage;
+  double get atlChangePercentage;
   @override
-  String get atl_date;
+  String get atlDate;
   @override
   Object? get roi;
   @override
-  String get last_updated;
+  String get lastPpdated;
   @override
   @JsonKey(ignore: true)
   $Coins$CopyWith<Coins$> get copyWith => throw _privateConstructorUsedError;

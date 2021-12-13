@@ -25,16 +25,6 @@ class AppEpics {
     ]);
   }
 
-  //
-  //   Stream<dynamic> getWeather(Stream<GetWeather> actions, EpicStore<AppState> store) {
-  //   return actions.flatMap<void>((GetWeather action) => Stream<void>.value(null)
-  //       .asyncMap((_) => _weatherApi.getWeather())
-  //       .map<Object>((Map<String, dynamic> info) => GetWeatherSuccessful(info))
-  //       .onErrorReturnWith((Object error, StackTrace stackTrace) => GetWeatherError(error))
-  //       .switchMap <void> ((_) => Stream.periodic(Duration(seconds: 1)))
-  //       .doOnData(action.result));
-  // }
-
   Stream<dynamic> getWeather(Stream<GetWeather> actions, EpicStore<AppState> store) {
     return actions.flatMap<void>((GetWeather action) => Stream<void>.value(null)
         .switchMap((_) => Stream<void>.periodic(const Duration(seconds: 1)))
