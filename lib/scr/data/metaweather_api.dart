@@ -81,7 +81,7 @@ class MetaWeatherApi {
         break;
       case 's':
         {
-          info['wti'] = 'https://www.metaweather.com//static/img/weather/png/64/wti.png';
+          info['wti'] = 'https://www.metaweather.com//static/img/weather/png/64/s.png';
         }
         break;
       case 'hc':
