@@ -22,9 +22,9 @@ class CoinGenckoApi {
       throw StateError('Error fetching the tokens');
     }
 
-    final List<dynamic> data = jsonDecode(response.body);
+    final List<dynamic> data = jsonDecode(response.body) as List<dynamic>;
 
-    return data.map((item) => Coins.fromJson(item)).toList();
+    return data.map((dynamic item) => Coins.fromJson(item as Map<dynamic, dynamic>)).toList();
   }
 
   // 1,14,30 days - allow values
@@ -45,9 +45,9 @@ class CoinGenckoApi {
       throw StateError('Error fetching the tokens');
     }
 
-    final Map<dynamic, dynamic> info = jsonDecode(response.body);
-    final List<dynamic> data = info['prices'];
+    final Map<dynamic, dynamic> info = jsonDecode(response.body) as Map<dynamic, dynamic>;
+    final List<dynamic> data = info['prices'] as List<dynamic>;
 
-    return data.map((item) => History.fromJson({'time': item[0], 'value': item[1]})).toList();
+    return data.map((dynamic item) => History.fromJson(<dynamic, dynamic> {'time': item[0], 'value': item[1]})).toList();
   }
 }

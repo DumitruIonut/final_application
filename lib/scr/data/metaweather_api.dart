@@ -24,7 +24,7 @@ class MetaWeatherApi {
       throw StateError('Error fetching the tokens');
     }
 
-    final List<dynamic> data = jsonDecode(response.body);
+    final List<dynamic> data = jsonDecode(response.body) as List<dynamic>;
 
     final Uri uri2 = Uri(
       scheme: 'https',
@@ -37,7 +37,7 @@ class MetaWeatherApi {
       throw StateError('Error fetching the tokens');
     }
 
-    final Map<String, dynamic> data2 = jsonDecode(response2.body);
+    final Map<String, dynamic> data2 = jsonDecode(response2.body) as Map<String, dynamic>;
 
     info['city'] = "${data[0]['title']}";
     info['wts'] = "${data2['consolidated_weather'][0]['weather_state_name']}";
